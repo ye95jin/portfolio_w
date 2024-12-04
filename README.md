@@ -1,8 +1,8 @@
 # 박예진의 포트폴리오 🌟  
 
-이 포트폴리오는 저의 프론트엔드 개발 역량과 프로젝트 경험을 소개하기 위해 제작되었습니다.  
+이 포트폴리오는 저의 프로젝트와 개발 역량을 소개하기 위해 제작되었습니다.  
 디자인과 개발을 자유롭게 넘나들며 사용자 중심의 경험을 제공합니다.  
-필요한 지식과 기술을 끊임없이 습득하는 **다재다능한 개발자**의 여정을 담았습니다.  
+필요한 지식과 기술을 끊임없이 습득하는 **다재다능한 디자이너**의 여정을 담았습니다.  
 
 ---
 
@@ -10,22 +10,23 @@
 
 1. **INTRO**  
    감각적인 비주얼과 핵심 메시지로 강렬한 첫인상을 전달합니다.  
-   > "I am a proactive developer who navigates seamlessly between design and development."
+   > "I am a proactive designer who seamlessly blends creativity
+   	with functionality, continually acquiring the necessary knowledge and skills."
 
 2. **ABOUT ME**  
-   디자인과 개발의 경계를 허물고, 끊임없이 배우는 개발자로서의 비전과 철학을 소개합니다.  
-   > "필요한 지식과 기술을 습득하며 발전하는 다재다능한 개발자입니다."
+   디자인과 개발의 경계를 허물고, 끊임없이 배우는 디자이너로서의 비전과 철학을 소개합니다.  
+   > "필요한 지식과 기술을 습득하며 발전하는 다재다능한 디자이너입니다."
 
 3. **SKILLS**  
-   **HTML, CSS, SASS, JavaScript, React** 등 사용 가능한 기술과 경험을 요약합니다.  
+   **Adobe Program, Blender 3D, Figma, Web Publishing** 등 사용 가능한 기술과 경험을 요약합니다.  
    각각의 기술이 적용된 구체적인 사례를 카드 형식으로 정리하였습니다.
 
 4. **PROJECTS**  
-   주요 프로젝트를 소개하며, 구현한 기능과 사용된 기술을 명시합니다.  
-   프로젝트별로 React, SwiperJS, Sass 등의 활용 사례를 볼 수 있습니다.
+   주요 프로젝트를 소개하며, 구현한 프로그램과 사용된 기술을 명시합니다.  
+   프로젝트별로 디자인툴 & 개발 등의 활용 사례를 볼 수 있습니다.
 
-5. **OPEN-SOURCE**  
-   오픈 소스 프로젝트 기여 이력과 활동을 소개합니다.
+5. **WORKS**  
+   디자인 작업 활동을 소개합니다.
 
 6. **CONTACT**  
    GitHub, Notion, 이메일 등의 연락처와 소셜 링크를 제공합니다.
@@ -81,32 +82,31 @@
 
 ---
 
-## 🌍 오픈소스 
+## 🌍 WORKS 
 
-이 섹션은 React와 JavaScript를 활용하여 개발한 오픈소스 프로젝트들을 소개합니다.  
-각 프로젝트는 다양한 기능과 기술 스택을 활용해 프론트엔드 개발 역량을 증명합니다.
+이 섹션은 디자인 작업물을 소개합니다.  
 
-### 주요 오픈소스 프로젝트
+### 주요 작업물 소개
 
-1. **React와 Fetch API로 비동기 데이터 처리 및 로딩 상태 구현**  
+1. **작업물1**  
    - [View More](https://open-source1-one.vercel.app/)
 
-2. **Redux를 활용한 상태 관리 및 데이터 흐름 구현**  
+2. **작업물2**  
    - [View More](https://open-source4-three.vercel.app/)
 
-3. **Fetch API와 map() 함수로 GNB HTML 생성**  
+3. **작업물3**  
    - [View More](https://open-source9-alpha.vercel.app/)
 
-4. **Fetch API와 map() 함수로 GNB HTML 생성 (또 다른 버전)**  
+4. **작업물4**  
    - [View More](https://open-source10-sigma.vercel.app/)
 
-5. **useState와 useEffect로 반응형 HTML 렌더링 및 Fetch API 활용**  
+5. **작업물5**  
    - [View More](https://open-source13.vercel.app/)
 
-6. **React 기반 '더보기' 버튼으로 데이터 개수 동적 조절**  
+6. **작업물6**  
    - [View More](https://open-source14.vercel.app/)
 
-7. **React Hook과 sort()로 데이터 정렬 및 사용자 맞춤 기능 구현**  
+7. **작업물7**  
    - [View More](https://open-source15.vercel.app/)
 
 ---

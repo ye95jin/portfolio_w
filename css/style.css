@@ -524,7 +524,7 @@ body {
 }
 .projects .pj_wrapper .pj_box > a {
   display: block;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
 }
 .projects .pj_wrapper .pj_box .pj_thumb {
   /* margin-bottom: 40px; */
@@ -830,9 +830,9 @@ body._hidden,
   padding: 1rem;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 1px 1px rgba(82, 82, 82, 0.1),
-    0 2px 2px rgba(105, 104, 104, 0.1), 0 4px 4px rgba(75, 75, 75, 0.1),
-    0 8px 8px rgba(69, 69, 69, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(82, 82, 82, 0.1),
+    0 4px 4px rgba(105, 104, 104, 0.1), 0 8px 8px rgba(75, 75, 75, 0.1),
+    0 10px 10px rgba(69, 69, 69, 0.1), 0 32px 32px rgba(0, 0, 0, 0.1);
   width: 100%; /* 가로 크기 */
   height: 100%; /* 높이 설정 */
   box-sizing: border-box;
@@ -1135,7 +1135,7 @@ body._hidden,
   min-width: 270px;
   height: 470px;
   -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -ms-transition: all 0.3s linear 0s;
@@ -1145,7 +1145,7 @@ body._hidden,
 .post-module:hover,
 .hover {
   -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 1px 30px 0px rgba(158, 158, 158, 0.3);
+  box-shadow: 0px 1px 30px 0px rgba(94, 94, 94, 0.3);
 }
 .post-module:hover .thumbnail img,
 .hover .thumbnail img {
