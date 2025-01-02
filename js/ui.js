@@ -35,7 +35,7 @@ const ui = {
 
 	function setSlideBackgrounds() {
 		document.querySelectorAll(".swiper-slide.card").forEach((card, index) => {
-		  const imageUrl = `/portfolio/images/open-source/project${(index % 7) + 1}.png`;
+		  const imageUrl = `/portfolio_w/images/open-source/project${(index % 6) + 1}.png`;
 		  // 이미지 강제 중앙 정렬
 		  card.style.display = "flex";
 		  card.style.justifyContent = "center";

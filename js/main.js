@@ -496,6 +496,7 @@ window.addEventListener("load", function () {
   );
   // 버튼
   let topButton = document.getElementById("topButton");
+  topButton.style.transition = "all 0.4s ease, all 0.4s ease";
 
   // 사용자가 문서의 맨 위에서 20px 아래로 스크롤하면 버튼을 표시
   window.onscroll = function () {
@@ -503,9 +504,13 @@ window.addEventListener("load", function () {
       (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) &&
       !(window.innerWidth < 1280)
     ) {
-      topButton.style.display = "block";
+      topButton.style.opacity = "1";
+      topButton.style.bottom = "20px";
+      // topButton.style.display = "block";
     } else {
-      topButton.style.display = "none";
+      topButton.style.opacity = "0";
+      topButton.style.bottom = "-20px";
+      // topButton.style.display = "none";
     }
   };
 

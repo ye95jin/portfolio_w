@@ -1,6 +1,6 @@
 # 박예진의 포트폴리오 🌟  
 
-이 포트폴리오는 저의 프로젝트와 개발 역량을 소개하기 위해 제작되었습니다.  
+이 포트폴리오는 저의 프로젝트와 디자인 역량을 소개하기 위해 제작되었습니다.  
 디자인과 개발을 자유롭게 넘나들며 사용자 중심의 경험을 제공합니다.  
 필요한 지식과 기술을 끊임없이 습득하는 **다재다능한 디자이너**의 여정을 담았습니다.  
 
@@ -29,7 +29,7 @@
    디자인 작업 활동을 소개합니다.
 
 6. **CONTACT**  
-   GitHub, Notion, 이메일 등의 연락처와 소셜 링크를 제공합니다.
+   이메일 등의 소셜 링크를 제공합니다.
 
 ---
 
@@ -41,44 +41,37 @@
 - **애니메이션 효과:**  
   GSAP와 ScrollTrigger로 부드럽고 매끄러운 화면 전환을 구현.  
 
-- **모던 기술 스택:**  
-  Sass, Tailwind CSS 등을 활용해 트렌디한 웹 페이지를 제작.  
-
 - **협업 중심:**  
-  GitHub로 체계적인 버전 관리를 수행하며 Notion으로 작업 과정을 관리.  
+  GitHub로 체계적인 버전 관리를 수행.  
 
 ---
 
 ## 🔍 주요 프로젝트  
 
-1. **Wylie 리뉴얼**  
-   - **기술 스택:** React, Axios, Tailwind CSS  
-   - **주요 기능:**  
-     - Axios를 이용해 외부 데이터를 로드하여 프로젝트 페이지를 렌더링.  
-     - Contact 카테고리에서 데이터를 입력하고 서버로 전송하는 기능 구현.
-     - Tailwind CSS를 활용한 효율적인 스타일링.  
+1. **Kodak 리뉴얼**  
+   - **기술 스택:** Adobe Ps, Ai, Swiper, JS  
+   - **상세 설명:**  
+     - Kodak 브랜드의 새로운 아이덴티티를 시각적으로 표현하기 위해 Photoshop과 Illustrator를 활용해 UI/UX 디자인을 제작했습니다. 
+     - 웹페이지는 HTML/CSS와 JavaScript를 사용해 퍼블리싱하였으며, 사용자 친화적인 인터페이스와 반응형 디자인을 구현했습니다.
 
 2. **O'kichen 리뉴얼**  
-   - **기술 스택:** PWA, SwiperJS, JavaScript  
-   - **주요 기능:**  
-     - PWA(Progressive Web App)로 설치 가능한 웹 애플리케이션 개발.  
-     - SwiperJS를 활용해 컨텐츠 탐색 슬라이더 구현.  
-     - 검색 버튼으로 검색 화면 이동 및 '더보기' 버튼으로 상세 페이지로 전환.  
-	 - 페이지별로 다른 헤더 디자인과 기능 구현.
+   - **기술 스택:** Adobe Ps, Ai, PWA, Swiper, JS  
+   - **상세 설명:**  
+     - Photoshop과 Illustrator를 활용하여 브랜드 아이덴티티를 강화하는 UI 디자인을 제작했으며, 각 페이지의 헤더 스타일과 기능을 사용자 경험에 맞게 조정했습니다.  
+     - PWA를 구현하여 웹앱으로 설치 가능하며, SwiperJS로 다이내믹한 컨텐츠 탐색 기능을 추가했습니다. 검색 버튼으로 검색 화면으로 이동하고, '더보기' 버튼을 통해 상세 페이지로 연결됩니다.
 
 3. **ArtCenter Nabi 리뉴얼**  
-   - **기술 스택:** React, Redux, Axios 
-   - **주요 기능:**  
-     - Redux를 활용하여 상태를 효율적으로 관리.  
-     - 첫 페이지에서 한 주간 인기 있는 갤러리 TOP 10 데이터를 랜덤으로 표시.  
-     - 유저가 선택한 장르에 따라 데이터를 받아오는 '더보기' 페이지 구현.  
+   - **기술 스택:**  Adobe Ps, Ai, Swiper, JS 
+   - **상세 설명:**  
+     - Photoshop과 Illustrator를 활용해 각 카테고리의 특징을 강조한 디자인을 제작했으며, HTML과 CSS로 구조화와 세부 스타일링을 구현했습니다.  
+     - jQuery를 사용하여 페이지 내에서 각 카테고리를 직관적으로 탐색할 수 있도록 인터랙션을 추가하여 사용자 경험을 강화했습니다.  
+     - 사용자 편의성을 고려한 간결한 레이아웃과 카테고리별 정보 구성을 통해 효율적인 탐색이 가능하도록 설계하였습니다. 
 
 4. **WConcept 리뉴얼**  
-   - **기술 스택:** React, Redux, JavaScript 
-   - **주요 기능:**  
-     - 반응형 웹사이트로 메인 및 서브 슬라이더 제어 기능 구현. 
-     - 카테고리별로 콘텐츠 필터링 가능. 
-     - 푸터의 체크박스를 커스텀하여 데이터를 입력받는 기능 추가.
+   - **기술 스택:**  Adobe Ps, Ai, Swiper, JS
+   - **상세 설명:**  
+     - Photoshop과 Illustrator를 활용해 Kellogg 브랜드의 아이덴티티를 강조한 디자인을 제작했으며, HTML과 CSS로 갤러리 형식의 레이아웃을 설계하여 사용자 친화적인 구조를 구현했습니다. 
+     - Swiper를 활용해 메인 슬라이더와 서브 슬라이더를 제어하며, 카테고리에 따라 동적으로 콘텐츠를 탐색할 수 있는 기능을 추가하여 사용자 경험을 강화했습니다.
 
 ---
 
@@ -88,46 +81,41 @@
 
 ### 주요 작업물 소개
 
-1. **작업물1**  
-   - [View More](https://open-source1-one.vercel.app/)
+1. **Blender로 미피 캐릭터를 제작하고 애니메이션을 구현한 작업.**  
+   - [View More](https://www.behance.net/gallery/215069101/Blender-Character-Creation-Miffy?lo=1734584821?share=1)
 
-2. **작업물2**  
-   - [View More](https://open-source4-three.vercel.app/)
+2. **Blender를 활용해 아이소메트릭 방을 구현한 작업.**  
+   - [View More](https://www.behance.net/gallery/215070821/Isometric-room-creation-using-Blender?lo=1734586940?share=1)
 
-3. **작업물3**  
-   - [View More](https://open-source9-alpha.vercel.app/)
+3. **Photoshop과 Illustrator를 활용해 카드뉴스를 제작한 작업.**  
+   - [View More](https://www.behance.net/gallery/215074259/_?lo=1734590572?share=1)
 
-4. **작업물4**  
-   - [View More](https://open-source10-sigma.vercel.app/)
+4. **Photoshop과 Firefly ai를 활용해 상세페이지를 제작한 작업.**  
+   - [View More](https://www.behance.net/gallery/215730147/Hydra-Glow-Toner-?lo=1735564078)
 
-5. **작업물5**  
-   - [View More](https://open-source13.vercel.app/)
+5. **blender와 figma를 활용해 Glassmorphism card를 제작.**  
+   - [View More](https://www.behance.net/gallery/215891025/Glass-Business-Card-Design?lo=1735819747?share=1)
 
-6. **작업물6**  
-   - [View More](https://open-source14.vercel.app/)
-
-7. **작업물7**  
-   - [View More](https://open-source15.vercel.app/)
+6. **figma와 Photoshop을 활용해 ui&ux 카드를 제작한 작업.**  
+   - [View More](https://www.behance.net/gallery/215892379/Progressive-Blur-Card-Design?lo=1735821014?share=1)
 
 ---
 
 ## 📌 기술 스택  
 
-- **Frontend:**  
-  HTML5, CSS3, JavaScript(ES6+), React, Redux, Axios, Sass, Tailwind CSS
-- **UI/UX:** 
-  SwiperJS, Styled Components
+- **Design** 
+  Adobe Ps, Ai, Pr, Ae, Figma, Blender
+- **development**  
+  HTML5, CSS3, JavaScript(ES6+), React, PWA
 - **Animation:**  
   GSAP, ScrollTrigger  
-- **Progressive Web App (PWA)::**  
-  Service Workers, Manifest  
 - **Collaboration:**  
-  Git & GitHub  
+  Git & GitHub, Notion, Flow 
 
 ---
 
 ## 📫 연락처  
 
 - **GitHub:** [https://github.com/ye95jin](https://github.com/ye95jin)  
-- **Notion:** [https://mellow-atom-120.notion.site/Front-end-Portfolio-11f50b55556880b0b723eb218a4effbb](https://mellow-atom-120.notion.site/Front-end-Portfolio-11f50b55556880b0b723eb218a4effbb)  
+- **Notion:** [https://mellow-atom-120.notion.site/Web-Designer-Portfolio-16f50b55556880e7af06fea98a836314?pvs=4](https://mellow-atom-120.notion.site/Web-Designer-Portfolio-16f50b55556880e7af06fea98a836314?pvs=4)  
 - **Email:** [ye95jin@naver.com](mailto:ye95jin@naver.com)  
