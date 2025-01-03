@@ -397,35 +397,50 @@ window.addEventListener("load", function () {
   });
 
   // 스킬 카드 호버 이벤트: 설명란이 이미지 위로 올라오기
+  // 호버 가능 여부 감지
+  const hoverQuery = window.matchMedia("(hover: none)");
   let postModules = document.querySelectorAll(".post-module");
 
-  postModules.forEach(function (postModule) {
-    let description = postModule.querySelector(".description");
-    description.style.display = "none";
-    description.style.maxHeight = "0";
-    description.style.opacity = "0";
-
-    postModule.addEventListener("mouseenter", function () {
+  function checkHoverCapability() {
+    if (hoverQuery.matches) {
       let description = this.querySelector(".description");
-
+    
       description.style.display = "block";
       description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
       description.style.maxHeight = description.scrollHeight + "px";
       description.style.opacity = "1";
       description.style.overflow = "hidden";
-    });
-
-    postModule.addEventListener("mouseleave", function () {
-      let description = this.querySelector(".description");
-      description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
-      description.style.maxHeight = "0";
-      description.style.opacity = "0";
-      description.style.overflow = "hidden";
-      setTimeout(function () {
+    } else {
+      postModules.forEach(function (postModule) {
+        let description = postModule.querySelector(".description");
         description.style.display = "none";
-      }, 300);
-    });
-  });
+        description.style.maxHeight = "0";
+        description.style.opacity = "0";
+    
+        postModule.addEventListener("mouseenter", function () {
+          let description = this.querySelector(".description");
+    
+          description.style.display = "block";
+          description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
+          description.style.maxHeight = description.scrollHeight + "px";
+          description.style.opacity = "1";
+          description.style.overflow = "hidden";
+        });
+    
+        postModule.addEventListener("mouseleave", function () {
+          let description = this.querySelector(".description");
+          description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
+          description.style.maxHeight = "0";
+          description.style.opacity = "0";
+          description.style.overflow = "hidden";
+          // setTimeout(function () {
+          //   description.style.display = "none";
+          // }, 300);
+        });
+      });
+    }
+  };
+  checkHoverCapability();
 
   // Open-source 섹션 타이틀 애니메이션 설정
   gsap.from(".open-source .main-tit", {

@@ -937,6 +937,23 @@ body._hidden,
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
+@media (hover: none) and (min-width: 320px) {
+  .post-module, .hover {
+    -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 30px 0px rgba(94, 94, 94, 0.3);
+  }
+  .post-module .thumbnail img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  .projects .pj_wrapper .pj_box .pj_thumb img {
+    filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
 @media (hover: hover) and (min-width: 320px) {
   .swiper-slide.card:after {
     transform: translateY(0);
