@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   const lenis = new Lenis();
-  if (window.innerWidth >= 1280) {
+  if (window.innerWidth >= 1024) {
     lenisAnimation();
   }
   ui.init();
@@ -86,7 +86,7 @@ window.addEventListener("load", function () {
       });
 
       // 모바일에서는 기본 스크롤 이동 사용
-      if (window.innerWidth < 1280) {
+      if (window.innerWidth < 1024) {
         scrollTarget.scrollIntoView({ behavior: "smooth" });
       }
     });
@@ -180,7 +180,7 @@ window.addEventListener("load", function () {
   gsap.timeline({
     scrollTrigger: {
       trigger: ".sc-about",
-      pin: this.window.innerWidth >= 1280 ? true : false,
+      pin: this.window.innerWidth >= 1024 ? true : false,
       // .sc-about 섹션에 도달하면 header에 active 클래스 추가
       onEnter() {
         header.classList.add("active");
@@ -192,8 +192,8 @@ window.addEventListener("load", function () {
     }
   });
 
-  // 1280px 이상에서만 실행
-  if (window.innerWidth >= 1280) {
+  // 1024px 이상에서만 실행
+  if (window.innerWidth >= 1024) {
     // .icon1 요소의 애니메이션 설정
     gsap.fromTo(
       ".icon1",
@@ -268,8 +268,8 @@ window.addEventListener("load", function () {
   }
 
   // .skills_wrap 요소의 애니메이션 설정
-  // 1280px 이상에서만 실행
-  if (window.innerWidth >= 1280) {
+  // 1024px 이상에서만 실행
+  if (window.innerWidth >= 1024) {
     gsap.fromTo(
       ".skills_wrap",
       {
@@ -330,7 +330,7 @@ window.addEventListener("load", function () {
   // 프로젝트 섹션 스크립트
   let mediaQuery = gsap.matchMedia();
 
-  mediaQuery.add("(min-width: 1280px)", function () {
+  mediaQuery.add("(min-width: 1024px)", function () {
     // desktop
     let deviceHeight = window.innerHeight;
     let contentsHeight = document.querySelector(".pj_wrapper").offsetHeight;
@@ -517,7 +517,7 @@ window.addEventListener("load", function () {
   window.onscroll = function () {
     if (
       (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) &&
-      !(window.innerWidth < 1280)
+      !(window.innerWidth < 1024)
     ) {
       topButton.style.opacity = "1";
       topButton.style.bottom = "20px";
@@ -617,7 +617,7 @@ window.addEventListener("load", function () {
   const aboutImages = Array.from(document.querySelectorAll(".specs > div"));
   const visibleImages = aboutImages.filter((_, index) => index === 0 || index === 2);
 
-  if (this.window.innerWidth < 1280) {
+  if (this.window.innerWidth < 1024) {
     aboutImages.forEach((image) => {
       image.style.display = "none";
     });
