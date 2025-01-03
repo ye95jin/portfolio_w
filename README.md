@@ -60,7 +60,7 @@
      - Photoshop과 Illustrator를 활용하여 브랜드 아이덴티티를 강화하는 UI 디자인을 제작했으며, 각 페이지의 헤더 스타일과 기능을 사용자 경험에 맞게 조정했습니다.  
      - PWA를 구현하여 웹앱으로 설치 가능하며, SwiperJS로 다이내믹한 컨텐츠 탐색 기능을 추가했습니다. 검색 버튼으로 검색 화면으로 이동하고, '더보기' 버튼을 통해 상세 페이지로 연결됩니다.
 
-3. **ArtCenter Nabi 리뉴얼**  
+3. **NationalGeographic 리뉴얼**  
    - **기술 스택:**  Adobe Ps, Ai, Swiper, JS 
    - **상세 설명:**  
      - Photoshop과 Illustrator를 활용해 각 카테고리의 특징을 강조한 디자인을 제작했으며, HTML과 CSS로 구조화와 세부 스타일링을 구현했습니다.  
