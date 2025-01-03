@@ -1103,7 +1103,7 @@ body._hidden,
 .footer .ft-wrap .ft-info strong {
   margin-right: 10px;
 }
-.footer .ft-wrap .ft-info p {
+.footer .ft-wrap .ft-info a {
   margin: 5px 0;
 }
 
@@ -1224,7 +1224,7 @@ body._hidden,
 }
 .post-module .post-content .description {
   color: #666666;
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 1.8em;
   word-break: keep-all;
 }
