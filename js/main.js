@@ -440,7 +440,7 @@ window.addEventListener("load", function () {
       });
     }
   };
-  checkHoverCapability();
+  // checkHoverCapability();
 
   // Open-source 섹션 타이틀 애니메이션 설정
   gsap.from(".open-source .main-tit", {
