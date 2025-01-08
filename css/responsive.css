@@ -698,7 +698,7 @@
     bottom: -515px;
     left: -221px;
     rotate: 90deg;
-    width: 179%;
+    width: 100%;
     height: 471%;
   }
 
@@ -1280,7 +1280,16 @@
     width: 100px;
     height: 90px;
   }
+  .main-contact::after {
+    bottom: -644px; 
+    left: -447px; 
+    rotate: 291deg;
+    width: 147%; 
+    height: 162%;
+  }
+
 }
+
 
 /* 작은 데스크탑 (1025px ~ 1279px) */
 @media (min-width: 1025px) and (max-width: 1279px) {
@@ -1481,6 +1490,7 @@
     width: 140px;
     height: 120px;
   }
+  
 }
 
 /* 일반 데스크탑 (1280px 이상) */

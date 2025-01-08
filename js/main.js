@@ -1,8 +1,17 @@
 window.addEventListener("load", function () {
   const lenis = new Lenis();
-  if (window.innerWidth >= 1024) {
+
+  // 해상도가 1280px 이상이거나 터치가 없는 디바이스에서만 Lenis 활성화
+  if (
+    window.innerWidth > 1279 || // 해상도 조건
+    (!("ontouchstart" in window) && navigator.maxTouchPoints === 0) // 터치 불가능 조건
+  ) {
     lenisAnimation();
+  } else {
+    document.documentElement.style.overflow = ""; // 기본 스크롤 복원
+    document.body.style.overflow = "";
   }
+
   ui.init();
 
   // header 요소 선택
@@ -35,8 +44,12 @@ window.addEventListener("load", function () {
       const section = sections[index];
 
       // 특정 섹션의 경우 부모 .pin-spacer로 스크롤
-      const isPinnedSection = ["ABOUT", "SKILLS", "PROJECTS"].includes(navItem.textContent);
-      const scrollTarget = isPinnedSection ? section.closest(".pin-spacer") || section : section;
+      const isPinnedSection = ["ABOUT", "SKILLS", "PROJECTS"].includes(
+        navItem.textContent
+      );
+      const scrollTarget = isPinnedSection
+        ? section.closest(".pin-spacer") || section
+        : section;
 
       // 진행 중인 gsap 애니메이션 중단
       gsap.killTweensOf(window);
@@ -68,8 +81,12 @@ window.addEventListener("load", function () {
       const section = sections[index];
 
       // 특정 섹션의 경우 부모 .pin-spacer로 스크롤
-      const isPinnedSection = ["ABOUT", "SKILLS", "PROJECTS"].includes(link.textContent);
-      const scrollTarget = isPinnedSection ? section.closest(".pin-spacer") || section : section;
+      const isPinnedSection = ["ABOUT", "SKILLS", "PROJECTS"].includes(
+        link.textContent
+      );
+      const scrollTarget = isPinnedSection
+        ? section.closest(".pin-spacer") || section
+        : section;
 
       // 메뉴 닫기
       menuOverlay.classList.remove("active");
@@ -86,7 +103,7 @@ window.addEventListener("load", function () {
       });
 
       // 모바일에서는 기본 스크롤 이동 사용
-      if (window.innerWidth < 1024) {
+      if (window.innerWidth < 1280) {
         scrollTarget.scrollIntoView({ behavior: "smooth" });
       }
     });
@@ -180,7 +197,7 @@ window.addEventListener("load", function () {
   gsap.timeline({
     scrollTrigger: {
       trigger: ".sc-about",
-      pin: this.window.innerWidth >= 1024 ? true : false,
+      pin: this.window.innerWidth > 1280 ? true : false,
       // .sc-about 섹션에 도달하면 header에 active 클래스 추가
       onEnter() {
         header.classList.add("active");
@@ -192,8 +209,8 @@ window.addEventListener("load", function () {
     }
   });
 
-  // 1024px 이상에서만 실행
-  if (window.innerWidth >= 1024) {
+  // 1280px 이상에서만 실행
+  if (window.innerWidth > 1279) {
     // .icon1 요소의 애니메이션 설정
     gsap.fromTo(
       ".icon1",
@@ -268,8 +285,8 @@ window.addEventListener("load", function () {
   }
 
   // .skills_wrap 요소의 애니메이션 설정
-  // 1024px 이상에서만 실행
-  if (window.innerWidth >= 1024) {
+  // 1280px 이상에서만 실행
+  if (window.innerWidth > 1279) {
     gsap.fromTo(
       ".skills_wrap",
       {
@@ -328,10 +345,7 @@ window.addEventListener("load", function () {
   });
 
   // 프로젝트 섹션 스크립트
-  let mediaQuery = gsap.matchMedia();
-
-  mediaQuery.add("(min-width: 1024px)", function () {
-    // desktop
+  if (window.innerWidth > 1279) {
     let deviceHeight = window.innerHeight;
     let contentsHeight = document.querySelector(".pj_wrapper").offsetHeight;
 
@@ -345,22 +359,11 @@ window.addEventListener("load", function () {
       }
     });
 
-    projectTl.fromTo(
-      ".pj_wrapper",
-      {
-        y: 400
-      },
-      {
-        y: -contentsHeight
-      }
-    );
+    projectTl.fromTo(".pj_wrapper", { y: 400 }, { y: -contentsHeight });
 
-    // .project-star-icon 요소의 애니메이션 설정
     gsap.fromTo(
       ".project-star-icon",
-      {
-        y: 400
-      },
+      { y: 400 },
       {
         y: -deviceHeight / 4,
         duration: 0.7,
@@ -372,9 +375,9 @@ window.addEventListener("load", function () {
         }
       }
     );
-  });
+  }
 
-  // 스킬 섹션 타이틀 애니메이션 설정
+  // 프로젝트 섹션 타이틀 애니메이션 설정
   gsap.from(".project_tit .project_text", {
     scrollTrigger: {
       trigger: ".projects",
@@ -404,7 +407,7 @@ window.addEventListener("load", function () {
   function checkHoverCapability() {
     if (hoverQuery.matches) {
       let description = this.querySelector(".description");
-    
+
       description.style.display = "block";
       description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
       description.style.maxHeight = description.scrollHeight + "px";
@@ -416,20 +419,22 @@ window.addEventListener("load", function () {
         description.style.display = "none";
         description.style.maxHeight = "0";
         description.style.opacity = "0";
-    
+
         postModule.addEventListener("mouseenter", function () {
           let description = this.querySelector(".description");
-    
+
           description.style.display = "block";
-          description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
+          description.style.transition =
+            "max-height 0.3s ease, opacity 0.3s ease";
           description.style.maxHeight = description.scrollHeight + "px";
           description.style.opacity = "1";
           description.style.overflow = "hidden";
         });
-    
+
         postModule.addEventListener("mouseleave", function () {
           let description = this.querySelector(".description");
-          description.style.transition = "max-height 0.3s ease, opacity 0.3s ease";
+          description.style.transition =
+            "max-height 0.3s ease, opacity 0.3s ease";
           description.style.maxHeight = "0";
           description.style.opacity = "0";
           description.style.overflow = "hidden";
@@ -439,7 +444,7 @@ window.addEventListener("load", function () {
         });
       });
     }
-  };
+  }
   // checkHoverCapability();
 
   // Open-source 섹션 타이틀 애니메이션 설정
@@ -516,8 +521,9 @@ window.addEventListener("load", function () {
   // 사용자가 문서의 맨 위에서 20px 아래로 스크롤하면 버튼을 표시
   window.onscroll = function () {
     if (
-      (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) &&
-      !(window.innerWidth < 1024)
+      (document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20) &&
+      !(window.innerWidth < 1280)
     ) {
       topButton.style.opacity = "1";
       topButton.style.bottom = "20px";
@@ -596,7 +602,7 @@ window.addEventListener("load", function () {
   window.addEventListener("resize", () => {
     const logo = document.querySelector(".hd-logo img");
 
-    if (window.innerWidth >= 1025) {
+    if (window.innerWidth > 1279) {
       menuOverlay.classList.remove("active");
       menuButton.classList.remove("open");
       document.body.style.position = ""; // 스크롤 고정 해제
@@ -615,9 +621,11 @@ window.addEventListener("load", function () {
 
   // about 섹션 이미지 숨기기
   const aboutImages = Array.from(document.querySelectorAll(".specs > div"));
-  const visibleImages = aboutImages.filter((_, index) => index === 0 || index === 2);
+  const visibleImages = aboutImages.filter(
+    (_, index) => index === 0 || index === 2
+  );
 
-  if (this.window.innerWidth < 1024) {
+  if (this.window.innerWidth < 1280) {
     aboutImages.forEach((image) => {
       image.style.display = "none";
     });
