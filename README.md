@@ -99,6 +99,18 @@
 6. **figma와 Photoshop을 활용해 ui&ux 카드를 제작한 작업.**  
    - [View More](https://www.behance.net/gallery/215892379/Progressive-Blur-Card-Design?lo=1735821014?share=1)
 
+7. **Illustrator와 After Effects를 활용해 모션 그래픽 제작.**  
+   - [View More](https://youtube.com/playlist?list=PLL7P2AqGhHDCmu4tRf4S3_9QSD83nJgx4&si=Sh7PdGwxGTVE1Fha)
+
+8. **직접 촬영 후 Photoshop 활용해 사진 보정 작업.**  
+   - [View More](https://www.behance.net/gallery/219323479/Before-After?lo=1739592889)
+
+9. **Photoshop과 Illustrator를 활용해 패키지를 제작.**  
+   - [View More](https://www.behance.net/gallery/219274801/fitmate-Tubing-Band-SetPackaging-Design?lo=1739529152)
+
+10. **Photoshop과 Illustrator를 활용해 매뉴얼을 제작.**  
+   - [View More](https://www.behance.net/gallery/219274405/fitmate-Tubing-Band-SetManual-Design?lo=1739528731)
+
 ---
 
 ## 📌 기술 스택  

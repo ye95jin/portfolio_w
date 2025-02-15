@@ -4,19 +4,16 @@ const ui = {
   },
   slider() {
     new Swiper(".open-source .swiper", {
-      loop: true,
+      grabCursor: true,
       speed: 500,
-      // slidesPerView: 4.5,
       centeredSlides: true,
-      // spaceBetween: 50,
       autoplay: true,
-      // initialSlide: 5,
       autoplay: {
         delay: 2000
       },
       breakpoints: {
         320: {
-          initialSlide: 1,
+          initialSlide: 2,
           slidesPerView: 1,
           spaceBetween: 20
         },
@@ -31,12 +28,12 @@ const ui = {
           spaceBetween: 20
         },
         1025: {
-          initialSlide: 3,
+          initialSlide: 2,
           slidesPerView: 3.5,
           spaceBetween: 20
         },
         1280: {
-          initialSlide: 3,
+          initialSlide: 2,
           slidesPerView: 4.5,
           spaceBetween: 50,
         }
@@ -45,7 +42,7 @@ const ui = {
 
 	function setSlideBackgrounds() {
 		document.querySelectorAll(".swiper-slide.card").forEach((card, index) => {
-		  const imageUrl = `/portfolio_w/images/open-source/project${(index % 6) + 1}.png`;
+		  const imageUrl = `/portfolio_w/images/open-source/project${(index % 10) + 1}.png`;
 
 		  // 이미지 강제 중앙 정렬
 		  card.style.display = "flex";
