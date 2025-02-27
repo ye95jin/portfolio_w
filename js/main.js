@@ -287,24 +287,25 @@ window.addEventListener("load", function () {
   // .skills_wrap 요소의 애니메이션 설정
   // 1280px 이상에서만 실행
   if (window.innerWidth > 1279) {
-    gsap.fromTo(
-      ".skills_wrap",
-      {
-        xPercent: 100
-      },
-      {
-        xPercent: 0,
-        scrollTrigger: {
-          trigger: ".sc-skills",
-          pin: true,
-          scrub: true,
-          start: "top top",
-          end: "+=1000"
-        }
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sc-skills",
+        pin: true,
+        scrub: true,
+        start: "top top",
+        end: "+=1000"
       }
-    );
-  }
+    });
 
+    tl.from(".column", {
+      y: 100, // 각 요소가 시작할 때 아래쪽(100px 만큼)에서 시작
+      opacity: 0, // 투명한 상태에서 시작
+      duration: 1, // 애니메이션 지속 시간
+      ease: "power2.out", // 가속도 함수
+      stagger: 0.3 // 각 요소 간 0.3초 간격으로 애니메이션 실행
+    });
+  }
+  
   // About 섹션 텍스트 애니메이션 설정
   gsap.from(".sc-about .title h2", {
     scrollTrigger: {
